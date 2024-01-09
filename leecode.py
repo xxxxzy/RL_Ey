@@ -1,3 +1,4 @@
+'''
 #1.1
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -15,5 +16,13 @@ class Solution:
                 return [hashtable[target - num], i]
             hashtable[nums[i]] = i
         return []
-
+'''
 #2
+import numpy as np
+l = [1,2,3]
+l = np.array(l)
+s = [str(i) for i in l]
+print(l+l)
+
+# Join list items using join()
+res = int("".join(s))
