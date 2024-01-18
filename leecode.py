@@ -26,5 +26,7 @@ print(l+l)
 
 # Join list items using join()
 res = int("".join(s))
+res1 = int()
 
 #3
+#4
