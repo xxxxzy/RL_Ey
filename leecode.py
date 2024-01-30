@@ -16,17 +16,21 @@ class Solution:
                 return [hashtable[target - num], i]
             hashtable[nums[i]] = i
         return []
+
+#9
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        b = str(x)[::-1]
+        if b == str(x):
+            return True
+        else:
+            return False
+
 '''
-#2
-import numpy as np
-l = [1,2,3]
-l = np.array(l)
-s = [str(i) for i in l]
-print(l+l)
-
-# Join list items using join()
-res = int("".join(s))
-
-#3
-#4
-#5
+s = '1231I'
+b = str(s)[::-1]
+num = 0
+for i in b:
+    if i is 'I':
+        num = num + 1
+    if i
