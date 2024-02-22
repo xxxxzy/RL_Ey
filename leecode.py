@@ -26,7 +26,7 @@ class Solution:
         else:
             return False
 
-#14
+#13
 class Solution:
     def romanToInt(self, s: str) -> int:
         end=0
@@ -53,17 +53,20 @@ class Solution:
                 end+=dic[i]        
         return end
 '''
-#20
-strs = ["flower","flow","flight"]
-minLen = min(len(s) for s in strs)
-strs[1]
-#print(strs[0][:2])
-a = 0
-for i in range(0,minLen-1):
-    for j in range(0,len(strs)-1):
-        print(strs[1])
-        if strs[0][i] != strs[j][i]:
-            a = i
-            print(i)
+#14
+class Solution:
+    def longestCommonPrefix(self, strs: List[str]) -> str:
+
+        if not strs:
+            return ""
+        str0 = min(strs)
+        res = len(str0)
+        for i in range(len(str0)):
+            for char in strs:
+                if char[i] != str0[i]:
+                    res = min(res, i)
+                    break
+            else:
+                continue
             break
-#print(strs[0][:0])
+        return str0[:res]
